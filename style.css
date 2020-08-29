@@ -1,0 +1,616 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border:none;
+}
+
+html{
+
+    font-size: 10px;
+    font-family: Montserrat;
+    background-color: #2C3E50;
+}
+
+body{
+
+    font-family: 'Lato',sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+.container{
+
+    width: 80%;
+    margin-left: auto;   
+	margin-right: auto;
+	padding-left: .5rem;
+    padding-right: .5rem;
+    /* background-color: white; */
+}
+
+a{
+
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+
+    display: inline;
+    list-style-type: none;
+}
+
+.clearfix::after{
+
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.form-group{
+
+    display: block;
+    margin-top: .5rem;
+    float:left;
+}
+
+.form-group-comment{
+
+    display: block;
+    margin-top: .5rem;
+    float:left;
+    width: 91.7%;
+}
+
+.form-group input,.form-group button,.form-group textarea{
+
+    margin-top: 1rem;
+    border:.2rem solid black;
+    width: 100%;
+    display: block;
+    font-size: 2rem;
+    padding: 2rem;
+    font-family: Montserrat;
+    transition: all .3s linear;
+}
+
+textarea{
+
+    resize: none;
+}
+
+.form-control{
+
+    border-color: #fff;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.form-control:focus{
+
+    border:.2rem solid #18BC9C;
+    outline:0;
+}
+
+.share-post-textarea{
+
+    border-radius: 1rem;
+}
+
+.form-control-comment{
+
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.form-group-post{
+
+    display: inline;
+    float:none;
+    max-width: 130rem;
+}
+
+.btn{
+
+    margin-top: 1rem;
+    height: auto;
+    float: left;
+    background-color: none;
+    border: .2rem solid black;
+    font-size: 2rem;
+    transition: all .3s linear;
+}
+
+.search-btn{
+
+    padding: 2rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right: none;
+    display: inline-block;
+}
+
+.header-item-btn{
+
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    display: block;
+    margin-right: 1rem;
+}
+
+.menu-item-btn{
+
+    padding: 2rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.message-btn{
+
+    padding: 2rem;
+    width: 100%;
+    display: inline-block;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+}
+
+.other-share-method-btn{
+
+    display: block;
+    padding: 2rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+.share-post-btn{
+
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+.vote-btn{
+
+    padding: 2rem;
+    width: 100%;
+    position: relative; 
+    border-radius: 1rem;
+}
+
+.btn-color-1{
+
+    background-color: #18BC9C;
+    color: #fff;
+}
+
+.btn-color-2{
+
+    background-color: #2C3E50;
+    color: #fff;
+}
+
+.btn:hover{
+
+    cursor:pointer;
+    opacity: 0.8;
+    outline:0;
+}
+
+.btn:focus{
+
+    outline: 0;
+}
+
+.float-right{
+
+    float: right;
+}
+
+.tooltip{
+
+    position: relative;
+}
+
+.tooltip .text{
+
+    display: none;
+    width: 120px;
+    color: black;
+    background:#fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;/*Yazinin derinligi*/
+}
+
+.tooltip:hover
+.text{
+
+    display: inline-block;
+}
+
+.top{
+
+    top: -300%;
+    left: 50%;
+    margin-left: -10.6rem;
+}
+
+.bottom{
+
+    bottom:-10rem;
+    right: 50%;
+    right: -1rem;
+}
+
+.right{
+
+    left: -1rem;
+    top: 2rem;
+}
+
+.left{
+
+    right: 8rem;
+    top: 2.5rem;
+}
+
+hr{
+
+    margin: .1rem;
+    border: .4px solid gray;
+    position: relative;
+}
+
+/*Header*/
+
+header{
+
+    background-color: #2C3E50;
+    color: #fff;
+    padding-top: 1rem;
+	padding-bottom: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#logo-box{
+    
+    float: left;
+    display: block;
+}
+
+#logo-box:hover{
+    
+    float: left;
+    display: block;
+}
+
+#logo-box img{
+
+    width: 10rem;
+    height: auto;
+}
+
+.header-item{
+
+    display: block;
+    margin: .4rem;
+    text-align: center;
+    font-size: 700;
+}
+
+/*Menu*/
+
+#menu{
+
+    color: #fff;
+    position: fixed;
+    padding: 1rem;
+    width: 40rem;
+    background-color: #2C3E50;
+    margin-top: 13rem;
+    top: 0;
+    left: 0;
+    border-right: #18BC9C;
+}
+
+#menu-items{
+
+    position: relative;
+}
+
+.menu-item{
+
+    font-size: 2.2rem;
+    display: inline;
+}
+
+#menu i{
+
+    padding: .7rem;
+}
+
+/*Messages*/
+ 
+#messages{
+
+    color: #fff;
+    padding: 1rem;
+    width: 40rem;
+    background-color: #2C3E50;
+    margin-top: 13rem;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+
+#messages #messages-title-1{
+
+    margin-left: 11rem;
+    font-size: 2rem;
+}
+
+#messages #messages-title-2{
+
+    margin-top: 1rem;
+    margin-left: 8rem;
+}
+
+.person{
+
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+
+#messages img{
+
+    width: 13%;
+    margin-left: 1rem;
+    height: auto;
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+}
+
+#messages p{
+
+    margin-left: 7rem;
+}
+
+/*Content*/
+
+#content{
+
+    position: absolute;
+    top: 15rem;
+    left:50%;
+    margin-left: -50rem;
+    border-radius: 15px;
+    z-index: -1;
+    width: 90rem;
+}
+
+#share-post{
+
+    /* width: 100%; */
+    position: absolute;
+    top: 0;
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: #fff;
+}
+
+#message-post{
+
+    position: relative;
+}
+
+#share-post-button{
+
+    position: relative;
+    float: right;
+}
+
+#posts{
+
+    position:absolute;
+    top: 50rem;
+    left: 0;
+    /* width: 113.5rem; */
+}
+
+.post{
+
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    /* width: 100%; */
+    /* height: 95rem; */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    /* position: absolute; */
+}
+
+.post-header{
+
+    height: 8rem;
+    /* border: 2px solid #18BC9C; */
+    color: #fff;
+    font-size: 1.6;
+}
+
+.post-header .user-img{
+
+    position: relative;
+    top: 1.1rem;
+    left: 0rem;
+    width: 10%;
+    border-radius: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.post-header .user-infos{
+
+    position: relative;
+    margin-left: 2rem;
+}
+
+.post-header .user-infos .name{
+
+    position: absolute;
+    top: 2rem;
+    left: 10rem;
+}
+
+.post-header .user-infos .date{
+
+    position: absolute;
+    top: 4rem;
+    left: 10rem;
+    color: gray;
+}
+
+.more{
+
+    font-size: 2.5rem;
+    height: auto;
+    top: 2rem;
+    right: 3rem;
+    position: relative;
+    float: right;
+}
+
+.post-body{
+
+    position: relative;
+}
+
+.description{
+
+    position: relative;
+    margin: 1rem;
+    color:#fff;
+}
+
+.image{
+
+    position: relative;
+    width: 78rem;
+    height: auto;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vote-item{
+
+    text-align: center;
+    width: 33%;
+    display: inline-block;
+}
+
+/*Footer*/
+
+footer{
+
+    /* position: relative; */
+    color: #fff;
+    margin: .5rem;
+    text-align: center;
+}
+
+footer li{
+
+    display: inline;
+}
+
+footer a:hover{
+
+    text-decoration-line: underline;
+}
+
+@media (max-width:1600px){
+
+    html{
+
+        font-size: 9px;
+    }
+
+    #messages{
+
+        display: none;
+    }
+
+    .container{
+
+        width: 100%;
+    }
+
+    #content{
+
+        position: absolute;
+        border-radius: 15px;
+        top: 15rem;
+        right: 60rem;
+        margin-left: -22rem;
+        z-index: -1;
+        width: 130rem;
+        float: right;
+    }
+}
+
+@media (max-width:1125px){
+
+    html{
+
+        font-size: 8px;
+    }
+
+    #messages{
+
+        display: none;
+    }
+
+    #content{
+
+        position: absolute;
+        border-radius: 15px;
+        top: 15rem;
+        right: 50%;
+        margin-left: -22rem;
+        z-index: -1;
+        width: 130rem;
+    }
+}
+
+@media (max-width:1000px){
+
+    html{
+
+        font-size: 9px;
+    }
+
+    #menu{
+
+        display: none;
+    }
+
+    #content{
+
+        position: absolute;
+        margin-left: 5rem;
+        width: 100%;
+        left: 0;
+    }
+}
